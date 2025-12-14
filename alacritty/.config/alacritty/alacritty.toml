@@ -1,0 +1,75 @@
+[env]
+TERM = "xterm-256color"
+
+[colors]
+
+# Default colors
+[colors.primary]
+background = "#181818"
+foreground = "#f4f4ff"
+
+# Cursor colors
+[colors.cursor]
+text = "#181818"
+cursor = "#ffdd33"
+
+# Selection colors
+[colors.selection]
+text = "#181818"
+background = "#ffdd33"
+
+# Normal colors
+[colors.normal]
+black   = "#181818"
+red     = "#f43841"
+green   = "#95a99b"
+yellow  = "#ffdd33"
+blue    = "#73737d"
+magenta = "#cc8c3c"
+cyan    = "#95a99b"
+white   = "#f4f4ff"
+
+# Bright colors
+[colors.bright]
+black   = "#282828"
+red     = "#f43841"
+green   = "#95a99b"
+yellow  = "#ffdd33"
+blue    = "#73737d"
+magenta = "#cc8c3c"
+cyan    = "#95a99b"
+white   = "#ffffff"
+
+# Dim colors (optional, helps with inactive panes)
+[colors.dim]
+black   = "#202020"
+red     = "#cc8c3c"
+green   = "#73737d"
+yellow  = "#73737d"
+blue    = "#73737d"
+magenta = "#73737d"
+cyan    = "#73737d"
+white   = "#73737d"
+
+[font]
+normal = { family = "Iosevka Nerd Font Mono" }
+bold = { family = "Iosevka Nerd Font Mono" }
+italic = { family = "Iosevka Nerd Font Mono" }
+size = 12
+
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "None"
+opacity = 0.97
+
+[terminal.shell]
+program = "/bin/fish"
+args = ["--login"]
+
+[keyboard]
+bindings = [
+{ key = "F11", action = "ToggleFullscreen" },
+{ key = "Insert", mods = "Shift", action = "Paste" },
+{ key = "Insert", mods = "Control", action = "Copy" }
+]
