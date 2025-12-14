@@ -1,0 +1,21 @@
+-- Git related plugins
+return {
+  {
+    -- Adds git related signs to the gutter
+    'lewis6991/gitsigns.nvim',
+    opts = {
+      signs = {
+        add = { text = '+' },
+        change = { text = '~' },
+        delete = { text = '_' },
+        topdelete = { text = '‾' },
+        changedelete = { text = '~' },
+      },
+    },
+  },
+  {
+    -- Git fugitive (from nvim.bak)
+    'tpope/vim-fugitive',
+    lazy = false,
+  },
+}
